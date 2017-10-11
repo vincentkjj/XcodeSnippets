@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TO</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class &lt;#name#&gt;: NSObject, NSCoding {
+    
+    var &lt;#prop1#&gt;: &lt;#prop_type1#&gt;
+    
+    init(&lt;#prop1#&gt;: &lt;#prop_type1#&gt;) {
+        self.&lt;#prop1#&gt; = &lt;#prop1#&gt;
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(&lt;#prop1#&gt;, forKey: "&lt;#prop1#&gt;")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        &lt;#prop1#&gt; = aDecoder.decodeBool(forKey: "&lt;#prop1#&gt;")
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8807675B-27F1-4394-ACDA-FDC0E4461444</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TestObject</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
